@@ -125,10 +125,10 @@ local newBranchProtectionRule(pattern) = {
   restricts_pushes: false,
   blocks_creations: false,
   push_restrictions: [],
-  required_status_checks: [
-    # By default, the eclipse contributor agreement check must pass.
-    "eclipse-eca-validation:eclipsefdn/eca",
-  ],
+  // required_status_checks: [
+  //   # By default, the eclipse contributor agreement check must pass.
+  //   "eclipse-eca-validation:eclipsefdn/eca",
+  // ],
   requires_pull_request: true,
   required_approving_review_count: 2,
   requires_code_owner_reviews: false,
@@ -293,8 +293,8 @@ local newOrg(name, id) = {
   github_id: id,
   settings: {
     name: null,
-    plan: "enterprise",
-    billing_email: "webmaster@eclipse-foundation.org",
+    // plan: "enterprise",
+    // billing_email: "webmaster@eclipse-foundation.org",
     company: null,
     email: null,
     twitter_username: null,
@@ -321,7 +321,7 @@ local newOrg(name, id) = {
     members_can_fork_private_repositories: false,
 
     # Deploy keys
-    deploy_keys_enabled_for_repositories: false,
+    #deploy_keys_enabled_for_repositories: false,
 
     # Repository defaults: Commit signoff
     web_commit_signoff_required: true,
