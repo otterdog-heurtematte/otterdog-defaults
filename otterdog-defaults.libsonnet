@@ -154,13 +154,13 @@ local newPullRequest() = {
 };
 
 # Function to create status checks with default settings.
-local newStatusChecks() = {
-  do_not_enforce_on_create: false,
-  strict: false,
-  // status_checks: [
-  //   "eclipse-eca-validation:eclipsefdn/eca"
-  // ],
-};
+// local newStatusChecks() = {
+//   do_not_enforce_on_create: false,
+//   strict: false,
+//   // status_checks: [
+//   //   "eclipse-eca-validation:eclipsefdn/eca"
+//   // ],
+// };
 
 # Function to create a new repository ruleset with default settings.
 local newRepoRuleset(name) = {
@@ -179,7 +179,7 @@ local newRepoRuleset(name) = {
   bypass_actors: [],
 
   required_pull_request: newPullRequest(),
-  required_status_checks: newStatusChecks(),
+  // required_status_checks: newStatusChecks(),
 
   requires_linear_history: false,
   requires_commit_signatures: false,
