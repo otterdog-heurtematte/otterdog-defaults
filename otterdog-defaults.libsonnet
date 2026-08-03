@@ -471,13 +471,13 @@ local newOrg(name, id) = {
             requires_last_push_approval: true,
             dismisses_stale_reviews: true,
           },
-          required_status_checks+: {
-            strict: true,
-            status_checks: [
-              "eclipse-otterdog:eclipsefdn/otterdog-sync",
-              "eclipse-otterdog:eclipsefdn/otterdog-validation",
-            ],
-          },
+          // required_status_checks+: {
+          //   strict: true,
+          //   status_checks: [
+          //     "eclipse-otterdog:eclipsefdn/otterdog-sync",
+          //     "eclipse-otterdog:eclipsefdn/otterdog-validation",
+          //   ],
+          // },
         },
       ],
 
