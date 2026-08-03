@@ -157,9 +157,9 @@ local newPullRequest() = {
 local newStatusChecks() = {
   do_not_enforce_on_create: false,
   strict: false,
-  status_checks: [
-    "eclipse-eca-validation:eclipsefdn/eca"
-  ],
+  // status_checks: [
+  //   "eclipse-eca-validation:eclipsefdn/eca"
+  // ],
 };
 
 # Function to create a new repository ruleset with default settings.
