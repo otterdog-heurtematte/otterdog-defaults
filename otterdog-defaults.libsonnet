@@ -85,6 +85,9 @@ local newRepo(name) = {
 
     # allow actions to approve and merge pull requests
     actions_can_approve_pull_request_reviews: true,
+
+    # unset by default; not all plans support configuring this
+    max_cache_size_gb: null,
   },
 
   # repository webhooks
@@ -396,6 +399,9 @@ local newOrg(name, id) = {
 
       # allow actions to approve and merge pull requests
       actions_can_approve_pull_request_reviews: true,
+
+      # unset by default; not all plans support configuring this
+      max_cache_size_gb: null,
     }
   },
 
