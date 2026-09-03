@@ -401,7 +401,7 @@ local newOrg(name, id) = {
       actions_can_approve_pull_request_reviews: true,
 
       # unset by default; not all plans support configuring this
-      max_cache_size_gb: null,
+      // max_cache_size_gb: null,
     }
   },
 
