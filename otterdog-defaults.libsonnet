@@ -167,6 +167,14 @@ local newPullRequest() = {
 //   // ],
 // };
 
+# Function to create status checks with default settings.
+local newStatusChecks() = {
+  do_not_enforce_on_create: false,
+  strict: false,
+  status_checks: [],
+};
+
+
 # Function to create a new repository ruleset with default settings.
 local newRepoRuleset(name) = {
   name: name,
