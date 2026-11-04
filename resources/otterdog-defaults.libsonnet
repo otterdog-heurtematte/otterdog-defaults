@@ -601,9 +601,9 @@ local newOrg(name, id) = {
         },
       ],
 
-      custom_properties+: {
-        eclipse_project: "foundation-internal",
-      },
+      // custom_properties+: {
+      //   eclipse_project: "foundation-internal",
+      // },
 
       environments: [
         newEnvironment('github-pages') {
