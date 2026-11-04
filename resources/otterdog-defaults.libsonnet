@@ -643,4 +643,10 @@ local newOrg(name, id) = {
   newPullRequest:: newPullRequest,
   newStatusChecks:: newStatusChecks,
   newMergeQueue:: newMergeQueue,
+  newCopilotCodeReview:: newCopilotCodeReview,
+  newPattern:: newPattern,
+  newCodeScanning:: newCodeScanning,
+  newCodeQuality:: newCodeQuality,
+  newCodeCoverage:: newCodeCoverage,
+  newWorkflows:: newWorkflows,
 }
