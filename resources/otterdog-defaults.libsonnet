@@ -80,6 +80,9 @@ local newRepo(name, org=null) = {
     allow_verified_creator_actions: true,
     allow_action_patterns: [],
 
+    # do not require actions to be pinned to a full-length commit SHA
+    sha_pinning_required: false,
+
     # issue read tokens by default
     default_workflow_permissions: "read",
 
@@ -507,6 +510,9 @@ local newOrg(name, id) = {
       allow_github_owned_actions: true,
       allow_verified_creator_actions: true,
       allow_action_patterns: [],
+
+      # do not require actions to be pinned to a full-length commit SHA
+      sha_pinning_required: false,
 
       # issue read tokens by default
       default_workflow_permissions: "read",
